@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demowebshop">
+<listeners>
+<listener class-name="com.Demowebshop.listeners.Mylisteners" />
+</listeners>
+  <test name="Demowebshoptestcases">
+    <classes>
+    <!-- Run a single class -->
+      <class name="com.demowebshopqa.testcases.Logintest"/>
+     <class name="com.demowebshopqa.testcases.Registertest"/>
+     <class name="com.demowebshopqa.testcases.Searchtest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

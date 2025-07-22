@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Demowebshop]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Demowebshop.listeners.Mylisteners"/>
+  </listeners>
+  <test thread-count="5" name="Demowebshoptestcases(failed)(failed)">
+    <classes>
+      <class name="com.demowebshopqa.testcases.Searchtest">
+        <methods>
+          <include name="VerifySearchWithInvalidProduct"/>
+          <include name="VerifySearchWithValidProduct"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.demowebshopqa.testcases.Searchtest -->
+      <class name="com.demowebshopqa.testcases.Logintest">
+        <methods>
+          <include name="setup"/>
+          <include name="VerifyLoginWithValidCredentials" invocation-numbers="1"/>
+          <include name="VerifyLoginWithInvalidCredentials"/>
+          <include name="teardown"/>
+          <include name="VerifyloginWithValidemailAndinvalidpassword"/>
+        </methods>
+      </class> <!-- com.demowebshopqa.testcases.Logintest -->
+    </classes>
+  </test> <!-- Demowebshoptestcases(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Demowebshop]] -->
