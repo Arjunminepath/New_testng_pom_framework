@@ -34,7 +34,7 @@ public class Registertest extends Base{
 		driver = InitializeBrowser(prop.getProperty("browser"));
 		homepage = new Homepage(driver);
 		rp=homepage.registerclick();
-		System.out.println("sample for change");
+		System.out.println("sample for change update ");
 	}
 	@AfterMethod
 	public void teardown()
